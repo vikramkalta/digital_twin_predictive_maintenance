@@ -67,17 +67,19 @@ export function Model({ kpi, value, visibleFloor }) {
   return (
     <primitive
       object={scene}
-      scale={[10, 10, 10]}
-      position={[-0.45, 0.1, 0]}
-      rotation={[Math.PI / 6, Math.PI / -2, 0.1]}
+      scale={[45, 45, 45]}
+      position={[0.05, -0.2, 0]}
+      // rotation={[Math.PI / 6, Math.PI / -2, 0.1]}
+      rotation={[0.3, 0, 0]}
       dispose={null}
     >
       {/* Add Text as a child of the specific node if needed */}
       {scene.getObjectByName("FirstFloorBall") && (
         <Text
-          position={[0.05, 0.065, -0.045]} // Adjust to place text in front
-          rotation={[0, 1.56, 0]}
-          fontSize={0.01}
+          position={[-0.001, 0.02, 0.02]}
+          // position={[0.05, 0.065, -0.045]} // Adjust to place text in front
+          // rotation={[0, 1.56, 0]}
+          fontSize={0.002}
           color="black"
           anchorX="center"
           anchorY="middle"
